@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silva & Associados - Advocacia e Consultoria Jurídica</title>
+
+    <!-- segurança -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https:; img-src 'self' data: https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline';"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="Global" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- SEO -->
+
+    <meta
+      name="description"
+      content="Silva & Associados - Escritório de advocacia com mais de 25 anos de experiência em Direito Empresarial, Imobiliário, Família e muito mais. Agende sua consulta!"
+    />
+    <meta
+      name="keywords"
+      content="advocacia, consultoria jurídica, direito empresarial, direito imobiliário, direito de família, direito trabalhista, direito criminal, direito bancário"
+    />
+    <meta name="author" content="Silva & Associados" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- AOS Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- ============================================
+         HEADER - Navegação principal responsiva
+         ============================================ -->
+    <header class="glass-header fixed w-full top-0 z-40 shadow-lg">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <i
+              class="bi bi-scales text-4xl"
+              style="color: var(--secondary)"
+            ></i>
+            <div>
+              <h1 class="text-white text-2xl font-bold leading-none">
+                Silva & Associados
+              </h1>
+              <p class="text-gray-400 text-xs">Advocacia e Consultoria</p>
+            </div>
+          </div>
+
+          <!-- Menu Desktop -->
+          <ul class="hidden lg:flex items-center space-x-8">
+            <li>
+              <a
+                href="#inicio"
+                class="text-gray-300 hover:text-yellow-500 transition duration-300 font-medium"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sobre"
+                class="text-gray-300 hover:text-yellow-500 transition duration-300 font-medium"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a
+                href="#servicos"
+                class="text-gray-300 hover:text-yellow-500 transition duration-300 font-medium"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href="#depoimentos"
+                class="text-gray-300 hover:text-yellow-500 transition duration-300 font-medium"
+                >Depoimentos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="text-gray-300 hover:text-yellow-500 transition duration-300 font-medium"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contato"
+                class="btn-primary px-6 py-2 rounded-full font-semibold inline-flex items-center gap-2"
+              >
+                <i class="bi bi-whatsapp"></i> Agendar Consulta
+              </a>
+            </li>
+          </ul>
+
+          <!-- Menu Toggle Mobile -->
+          <button
+            id="menuToggle"
+            class="lg:hidden text-white text-3xl focus:outline-none"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div
+          id="mobileMenu"
+          class="mobile-menu fixed top-0 right-0 w-72 h-full bg-gray-900 shadow-2xl lg:hidden z-50"
+        >
+          <div class="p-6">
+            <button
+              id="menuClose"
+              class="text-white text-3xl mb-8 focus:outline-none"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+            <ul class="space-y-6">
+              <li>
+                <a
+                  href="#inicio"
+                  class="text-gray-300 hover:text-yellow-500 transition text-lg block mobile-link"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  class="text-gray-300 hover:text-yellow-500 transition text-lg block mobile-link"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-300 hover:text-yellow-500 transition text-lg block mobile-link"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#depoimentos"
+                  class="text-gray-300 hover:text-yellow-500 transition text-lg block mobile-link"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="text-gray-300 hover:text-yellow-500 transition text-lg block mobile-link"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  class="btn-primary px-6 py-3 rounded-full font-semibold block text-center mobile-link"
+                  >Agendar Consulta</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============================================
+         HERO - Seção principal com CTA
+         ============================================ -->
+    <section
+      id="inicio"
+      class="min-h-screen flex items-center pt-20 pb-[100px] relative overflow-hidden bg-cover bg-center bg-fixed bg-[linear-gradient(135deg,#1a2332_0%,#2c3e5088_100%),url('assets/images/bg-inicio.jpg')]"
+    >
+      <div class="container mx-auto px-6 max-[532px]:px-0 relative z-10">
+        <div class="grid lg:grid-cols-2 p-12 items-center">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <p
+              class="text-yellow-500 font-semibold mb-4 tracking-wide uppercase text-sm"
+            >
+              Excelência Jurídica
+            </p>
+            <h2
+              class="text-5xl max-sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            >
+              Protegendo seus <span class="text-yellow-500">direitos</span> com
+              dedicação
+            </h2>
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+              Mais de 25 anos de experiência oferecendo soluções jurídicas
+              personalizadas e estratégicas para pessoas físicas e empresas.
+            </p>
+            <div class="flex gap-4 max-sm:flex-col">
+              <a
+                href="#contato"
+                class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-block max-[532px]:w-full"
+              >
+                Agende uma Consulta
+              </a>
+              <a
+                href="#servicos"
+                class="border-2 border-yellow-500 text-yellow-500 px-8 py-4 rounded-full max-[532px]:w-full font-bold text-lg hover:bg-yellow-500 hover:text-gray-900 transition duration-300"
+              >
+                Nossos Serviços
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SOBRE - História e valores do escritório
+         ============================================ -->
+    <section id="sobre" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-600 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            Conheça Nossa História
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Sobre o Escritório
+          </h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="assets/images/imagem-sobre.png"
+              alt="Escritório"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <h3 class="text-3xl font-bold text-gray-900 mb-6">
+              Compromisso com a Excelência Jurídica
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+              Fundado em 1998, o Silva & Associados nasceu com a missão de
+              oferecer serviços jurídicos de excelência, pautados pela ética,
+              transparência e dedicação aos nossos clientes.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+              Com uma equipe multidisciplinar altamente qualificada, atuamos em
+              diversas áreas do direito, sempre buscando soluções estratégicas e
+              personalizadas para cada caso.
+            </p>
+
+            <!-- Diferenciais -->
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <i
+                  class="bi bi-check-circle-fill text-yellow-600 text-2xl icon-bounce"
+                ></i>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Atendimento Personalizado
+                  </h4>
+                  <p class="text-gray-600">
+                    Cada cliente recebe atenção exclusiva e estratégias
+                    customizadas.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <i
+                  class="bi bi-check-circle-fill text-yellow-600 text-2xl icon-bounce"
+                ></i>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Equipe Especializada
+                  </h4>
+                  <p class="text-gray-600">
+                    Profissionais com ampla experiência em suas áreas de
+                    atuação.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <i
+                  class="bi bi-check-circle-fill text-yellow-600 text-2xl icon-bounce"
+                ></i>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Resultados Comprovados
+                  </h4>
+                  <p class="text-gray-600">
+                    Histórico de sucesso em casos complexos e desafiadores.
+                  </p>
+                </div>
+              </div>
+              <!-- CTA dentro da seção -->
+              <!-- <a
+                href="#contato"
+                class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2"
+              >
+                <i class="bi bi-calendar-check"></i>
+                Agende Sua Consulta Gratuita
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="bg-[var(--primary)]">
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div
+            class="bg-white bg-opacity-5 backdrop-blur-lg p-8 text-center"
+            data-aos="flip-up"
+            data-aos-delay="0"
+          >
+            <div class="flex flex-col items-center">
+              <i class="bi bi-trophy text-yellow-500 text-5xl mb-4"></i>
+              <div class="stat-number">500+</div>
+            </div>
+            <p class="text-gray-300 mt-2">Casos Vencidos</p>
+          </div>
+          <div
+            class="bg-white bg-opacity-5 backdrop-blur-lg p-8 text-center"
+            data-aos="flip-up"
+            data-aos-delay="100"
+          >
+            <div class="flex flex-col items-center">
+              <i class="bi bi-people text-yellow-500 text-5xl mb-4"></i>
+              <div class="stat-number">1200+</div>
+            </div>
+            <p class="text-gray-300 mt-2">Clientes Atendidos</p>
+          </div>
+          <div
+            class="bg-white bg-opacity-5 backdrop-blur-lg p-8 text-center"
+            data-aos="flip-up"
+            data-aos-delay="200"
+          >
+            <div class="flex flex-col items-center">
+              <i class="bi bi-calendar-check text-yellow-500 text-5xl mb-4"></i>
+              <div class="stat-number">25+</div>
+            </div>
+            <p class="text-gray-300 mt-2">Anos de Experiência</p>
+          </div>
+          <div
+            class="bg-white bg-opacity-5 backdrop-blur-lg p-8 text-center"
+            data-aos="flip-up"
+            data-aos-delay="300"
+          >
+            <div class="flex flex-col items-center">
+              <i class="bi bi-star text-yellow-500 text-5xl mb-4"></i>
+              <div class="stat-number">98%</div>
+            </div>
+            <p class="text-gray-300 mt-2">Satisfação</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVIÇOS - Áreas de atuação com CTAs
+         ============================================ -->
+    <section id="servicos" class="py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-600 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            Áreas de Atuação
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Como Podemos Ajudar Você?
+          </h2>
+          <div class="gold-line"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            Soluções jurídicas especializadas para proteger seus direitos e
+            interesses
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Serviço 1 - POPULAR -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover relative"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- <span class="badge-popular">Mais Procurado</span> -->
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-briefcase text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito Empresarial
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Proteja seu negócio com contratos sólidos, compliance e
+              consultoria estratégica.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Contratos
+                empresariais
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Fusões e
+                aquisições
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Compliance
+                corporativo
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Falar com Especialista <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-house-door text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito Imobiliário
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Segurança total em transações imobiliárias e regularizações de
+              propriedade.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Compra e venda
+                segura
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Regularização de
+                imóveis
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Disputas
+                condominiais
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Consulta Gratuita <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-heart text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito de Família
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Proteja sua família com sensibilidade e respeito em momentos
+              difíceis.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Divórcio
+                consensual
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Pensão
+                alimentícia
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Guarda de filhos
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Atendimento Sigiloso <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Serviço 4 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-clipboard-check text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito Trabalhista
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Defenda seus direitos trabalhistas com estratégia e experiência
+              comprovada.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Ações
+                trabalhistas
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Rescisões
+                contratuais
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Consultoria
+                preventiva
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Avaliação Gratuita <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Serviço 5 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-shield-check text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito Criminal
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Defesa criminal estratégica em todas as fases com total
+              confidencialidade.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Defesa em
+                inquéritos
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Acompanhamento
+                processual
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Recursos
+                judiciais
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Urgência 24h <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Serviço 6 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg card-hover"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="bi bi-bank text-yellow-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Direito Bancário
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Recupere seu equilíbrio financeiro com revisão de contratos e
+              dívidas.
+            </p>
+            <ul class="text-gray-600 text-sm mb-6 space-y-2">
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Revisão de
+                contratos
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Renegociação de
+                dívidas
+              </li>
+              <li>
+                <i class="bi bi-check text-green-500 mr-2"></i>Defesa do
+                consumidor
+              </li>
+            </ul>
+            <a
+              href="#contato"
+              class="text-yellow-600 font-semibold hover:text-yellow-700 transition inline-flex items-center gap-2"
+            >
+              Economize Agora <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- CTA após serviços -->
+        <div class="text-center mt-16" data-aos="fade-up">
+          <p class="text-gray-600 mb-6 text-lg">Não encontrou o que precisa?</p>
+          <a
+            href="#contato"
+            class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2"
+          >
+            <i class="bi bi-chat-dots"></i>
+            Fale com Nossa Equipe
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================
+         EQUIPE - Advogados e profissionais
+         ============================================ -->
+    <section id="equipe" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-600 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            Nossos Profissionais
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Equipe Especializada
+          </h2>
+          <div class="gold-line"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            Profissionais qualificados e comprometidos com a excelência
+          </p>
+        </div>
+
+        <div class="grid min-[532px]:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Advogado 1 -->
+          <div
+            class="card-equipe text-center card-hover shadow-lg pb-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative mb-6 overflow-hidden rounded-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=500&fit=crop"
+                alt="Dr. Carlos Silva"
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex justify-center space-x-3">
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-envelope text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Dr. Carlos Silva
+            </h3>
+            <p class="text-yellow-600 font-semibold mb-2">Sócio Fundador</p>
+            <p class="text-gray-600 text-sm">
+              Direito Empresarial e Tributário
+            </p>
+          </div>
+
+          <!-- Advogado 2 -->
+          <div
+            class="card-equipe text-center card-hover shadow-lg pb-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative mb-6 overflow-hidden rounded-2xl">
+              <img
+                src="assets/images/equipe/adv2.jpg"
+                alt="Dra. Mariana Costa"
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex justify-center space-x-3">
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-envelope text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Dra. Mariana Costa
+            </h3>
+            <p class="text-yellow-600 font-semibold mb-2">Sócia</p>
+            <p class="text-gray-600 text-sm">Direito de Família e Sucessões</p>
+          </div>
+
+          <!-- Advogado 3 -->
+          <div
+            class="card-equipe text-center card-hover shadow-lg pb-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative mb-6 overflow-hidden rounded-2xl">
+              <img
+                src="assets/images/equipe/adv1.jpg"
+                alt="Dr. Rafael Mendes"
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex justify-center space-x-3">
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-envelope text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Dr. Rafael Mendes
+            </h3>
+            <p class="text-yellow-600 font-semibold mb-2">Advogado Associado</p>
+            <p class="text-gray-600 text-sm">Direito Criminal e Penal</p>
+          </div>
+
+          <!-- Advogado 4 -->
+          <div
+            class="card-equipe text-center card-hover shadow-lg pb-8 rounded-2xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="relative mb-6 overflow-hidden rounded-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop"
+                alt="Dra. Juliana Alves"
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex justify-center space-x-3">
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white bg-opacity-20 backdrop-blur-lg p-4 rounded-full hover:bg-yellow-500 transition"
+                  >
+                    <i class="bi bi-envelope text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Dra. Juliana Alves
+            </h3>
+            <p class="text-yellow-600 font-semibold mb-2">Advogada Associada</p>
+            <p class="text-gray-600 text-sm">
+              Direito Trabalhista e Previdenciário
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         DEPOIMENTOS - Social Proof para conversão
+         ============================================ -->
+    <section id="depoimentos" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-600 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            O Que Dizem Nossos Clientes
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Resultados Que Falam Por Si
+          </h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Depoimento 1 -->
+          <div
+            class="testimonial-card card-hover p-6 shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/80?img=5"
+                alt="Cliente"
+                class="w-14 h-14 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Maria Santos</h4>
+                <div class="flex text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic leading-relaxed">
+              "Consegui meu divórcio de forma rápida e justa. A equipe foi
+              extremamente profissional e humana durante todo o processo."
+            </p>
+            <p class="text-yellow-600 font-semibold mt-4 text-sm">
+              Direito de Família
+            </p>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div
+            class="testimonial-card card-hover p-6 shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/80?img=12"
+                alt="Cliente"
+                class="w-14 h-14 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Carlos Oliveira</h4>
+                <div class="flex text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic leading-relaxed">
+              "Recuperei mais de R$ 80 mil em ação trabalhista. Recomendo
+              demais! Profissionais sérios e competentes."
+            </p>
+            <p class="text-yellow-600 font-semibold mt-4 text-sm">
+              Direito Trabalhista
+            </p>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div
+            class="testimonial-card card-hover p-6 shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/80?img=20"
+                alt="Cliente"
+                class="w-14 h-14 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-gray-900">Ana Costa</h4>
+                <div class="flex text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic leading-relaxed">
+              "Minha empresa estava com problemas contratuais sérios. Eles
+              resolveram tudo de forma impecável!"
+            </p>
+            <p class="text-yellow-600 font-semibold mt-4 text-sm">
+              Direito Empresarial
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA após depoimentos -->
+        <div class="text-center" data-aos="fade-up">
+          <p class="text-gray-600 mb-6 text-lg">
+            Seja o próximo caso de sucesso!
+          </p>
+          <a
+            href="#contato"
+            class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2"
+          >
+            <i class="bi bi-calendar-plus"></i>
+            Iniciar Meu Processo Agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FAQ - Perguntas frequentes
+         ============================================ -->
+    <section id="faq" class="py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-600 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            Dúvidas Frequentes
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Tudo o Que Você Precisa Saber
+          </h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="faq-item bg-white p-6 rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <button
+              class="faq-question w-full text-left flex items-center justify-between focus:outline-none"
+            >
+              <h3 class="text-xl font-bold text-gray-900 pr-8">
+                A primeira consulta realmente é gratuita?
+              </h3>
+              <i
+                class="bi bi-chevron-down text-yellow-600 text-2xl transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer mt-4 text-gray-600 leading-relaxed hidden">
+              <p>
+                <strong>Sim!</strong> A primeira consulta é 100% gratuita e sem
+                compromisso. Queremos entender seu caso, tirar suas dúvidas e
+                apresentar as melhores soluções. Você só contrata se realmente
+                quiser seguir em frente.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="faq-item bg-white p-6 rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <button
+              class="faq-question w-full text-left flex items-center justify-between focus:outline-none"
+            >
+              <h3 class="text-xl font-bold text-gray-900 pr-8">
+                Quanto custa contratar o escritório?
+              </h3>
+              <i
+                class="bi bi-chevron-down text-yellow-600 text-2xl transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer mt-4 text-gray-600 leading-relaxed hidden">
+              <p>
+                Os honorários variam conforme a complexidade do caso.
+                Trabalhamos com <strong>transparência total</strong>: na
+                primeira consulta apresentamos um orçamento detalhado, sem
+                custos ocultos. Oferecemos diferentes modalidades de pagamento
+                para facilitar.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="faq-item bg-white p-6 rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <button
+              class="faq-question w-full text-left flex items-center justify-between focus:outline-none"
+            >
+              <h3 class="text-xl font-bold text-gray-900 pr-8">
+                Em quanto tempo terei retorno?
+              </h3>
+              <i
+                class="bi bi-chevron-down text-yellow-600 text-2xl transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer mt-4 text-gray-600 leading-relaxed hidden">
+              <p>
+                Retornamos todos os contatos em <strong>até 24 horas</strong>.
+                Valorizamos seu tempo e sabemos que questões jurídicas
+                geralmente são urgentes. Nossa equipe está preparada para
+                atender você com agilidade.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="faq-item bg-white p-6 rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <button
+              class="faq-question w-full text-left flex items-center justify-between focus:outline-none"
+            >
+              <h3 class="text-xl font-bold text-gray-900 pr-8">
+                Atendem online ou só presencial?
+              </h3>
+              <i
+                class="bi bi-chevron-down text-yellow-600 text-2xl transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer mt-4 text-gray-600 leading-relaxed hidden">
+              <p>
+                <strong>Atendemos das duas formas!</strong> Você escolhe o que é
+                mais confortável: consultas presenciais em nosso escritório ou
+                online por videoconferência. Atendemos clientes em todo o
+                Brasil.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="faq-item bg-white p-6 rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <button
+              class="faq-question w-full text-left flex items-center justify-between focus:outline-none"
+            >
+              <h3 class="text-xl font-bold text-gray-900 pr-8">
+                Meu caso tem chances de sucesso?
+              </h3>
+              <i
+                class="bi bi-chevron-down text-yellow-600 text-2xl transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer mt-4 text-gray-600 leading-relaxed hidden">
+              <p>
+                Na primeira consulta, fazemos uma análise honesta e realista do
+                seu caso. Com <strong>98% de taxa de sucesso</strong>, temos
+                experiência para avaliar as melhores estratégias. Nunca
+                prometemos o que não podemos cumprir.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA após FAQ -->
+        <div class="text-center mt-12" data-aos="fade-up">
+          <p class="text-gray-600 mb-6 text-lg">Ainda tem dúvidas?</p>
+          <a
+            href="#contato"
+            class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2"
+          >
+            <i class="bi bi-chat-dots"></i>
+            Fale Conosco Agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTATO - Formulário e localização
+         ============================================ -->
+    <section id="contato" class="py-24 bg-[#1a2332f2]">
+      <div class="container mx-auto px-6">
+        <div class="mb-16" data-aos="fade-up">
+          <p
+            class="text-yellow-500 font-semibold mb-4 tracking-wide uppercase text-sm"
+          >
+            Entre em Contato
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-50 mb-4">
+            Fale Conosco
+          </h2>
+          <div class="gold-line-left"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Formulário -->
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <div class="bg-gray-50 p-8 rounded-2xl">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                Envie sua Mensagem
+              </h3>
+
+              <div class="space-y-6">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
+                    placeholder="Seu nome"
+                  />
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-gray-700 font-semibold mb-2"
+                      >E-mail</label
+                    >
+                    <input
+                      type="email"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-gray-700 font-semibold mb-2"
+                      >Telefone</label
+                    >
+                    <input
+                      type="tel"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
+                      placeholder="(71) 99999-9999"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Assunto</label
+                  >
+                  <select
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
+                  >
+                    <option>Selecione uma área</option>
+                    <option>Direito Empresarial</option>
+                    <option>Direito Imobiliário</option>
+                    <option>Direito de Família</option>
+                    <option>Direito Trabalhista</option>
+                    <option>Direito Criminal</option>
+                    <option>Direito Bancário</option>
+                    <option>Outros</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >Mensagem</label
+                  >
+                  <textarea
+                    rows="5"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition"
+                    placeholder="Descreva brevemente seu caso..."
+                  ></textarea>
+                </div>
+
+                <button
+                  class="btn-primary w-full px-8 py-4 rounded-lg font-bold text-lg"
+                >
+                  Enviar Mensagem <i class="bi bi-send ml-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Informações de Contato -->
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="info-contato"
+          >
+            <div
+              class="space-y-8 mb-8 bg-[#1a2332f2] p-10 rounded-2xl text-white"
+            >
+              <!-- Endereço -->
+              <div
+                class="flex items-start space-x-4 p-5 bg-gray-400 bg-opacity-10 max-sm:flex-col max-sm:items-center max-sm:space-x-0 max-sm:gap-4"
+              >
+                <div
+                  class="bg-yellow-100 bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-geo-alt text-yellow-600 text-2xl"></i>
+                </div>
+                <div class="max-sm:text-center">
+                  <h4 class="font-bold text-yellow-300 text-lg mb-2">
+                    Endereço
+                  </h4>
+                  <p class="text-gray-300">
+                    Av. Tancredo Neves, 1189 - Sala 2301<br />Caminho das
+                    Árvores, Salvador - BA<br />CEP: 41820-021
+                  </p>
+                </div>
+              </div>
+
+              <!-- Telefone -->
+              <div
+                class="flex items-start space-x-4 p-5 bg-gray-400 bg-opacity-10 max-sm:flex-col max-sm:items-center max-sm:space-x-0 max-sm:gap-4"
+              >
+                <div
+                  class="bg-yellow-100 bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-telephone text-yellow-600 text-2xl"></i>
+                </div>
+                <div class="max-sm:text-center">
+                  <h4 class="font-bold text-yellow-300 text-lg mb-2">
+                    Telefone
+                  </h4>
+                  <p class="text-gray-300">
+                    (71) 3271-8800<br />(71) 99999-9999 (WhatsApp)
+                  </p>
+                </div>
+              </div>
+
+              <!-- E-mail -->
+              <div
+                class="flex items-start space-x-4 p-5 bg-gray-400 bg-opacity-10 max-sm:flex-col max-sm:items-center max-sm:space-x-0 max-sm:gap-4"
+              >
+                <div
+                  class="bg-yellow-100 bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-envelope text-yellow-600 text-2xl"></i>
+                </div>
+                <div class="max-sm:text-center">
+                  <h4 class="font-bold text-yellow-300 text-lg mb-2">E-mail</h4>
+                  <p class="text-gray-300">
+                    contato@silvaassociados.com.br<br />atendimento@silvaassociados.com.br
+                  </p>
+                </div>
+              </div>
+
+              <!-- Horário -->
+              <div
+                class="flex items-start space-x-4 p-5 bg-gray-400 bg-opacity-10 max-sm:flex-col max-sm:items-center max-sm:space-x-0 max-sm:gap-4"
+              >
+                <div
+                  class="bg-yellow-100 bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-clock text-yellow-600 text-2xl"></i>
+                </div>
+                <div class="max-sm:text-center">
+                  <h4 class="font-bold text-yellow-300 text-lg mb-2">
+                    Horário de Atendimento
+                  </h4>
+                  <p class="text-gray-300">
+                    Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mapa -->
+        <div
+          class="bg-[var(--primary)] p-8 rounded-2xl overflow-hidden shadow-lg h-90 my-5"
+        >
+          <!-- quero que o mapa fique com um tema dark -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.981938916051!2d-38.46079191977229!3d-12.980791154680684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b1aff111171%3A0x84991d5785c1a8fb!2sAv.%20Tancredo%20Neves%2C%201189%20-%20Caminho%20das%20%C3%81rvores%2C%20Salvador%20-%20BA%2C%2041820-774!5e1!3m2!1spt-BR!2sbr!4v1766452964131!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="250px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="text-white mt-4 text-center">
+            <i class="bi bi-geo-alt text-yellow-500"></i>
+            Av. Tancredo Neves, 1189 - Sala 2301 Caminho das Árvores, Salvador -
+            BA CEP: 41820-021
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER - Rodapé com informações
+         ============================================ -->
+    <footer class="footer-gradient text-white pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <!-- Sobre o Escritório -->
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <i class="bi bi-scales text-4xl text-yellow-500"></i>
+              <div>
+                <h3 class="text-xl font-bold">Silva & Associados</h3>
+                <p class="text-gray-400 text-sm">Advocacia e Consultoria</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Comprometidos com a excelência jurídica e a defesa dos direitos de
+              nossos clientes há mais de 25 anos.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/1faeell"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition icon-bounce"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://instagram.com/fael.front"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition icon-bounce"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/rafaelsfront"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition icon-bounce"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://wa.me/5571988327708"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition icon-bounce"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links Rápidos -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Links Rápidos</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#inicio"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Sobre Nós</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#depoimentos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Depoimentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Áreas de Atuação -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Áreas de Atuação</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito
+                  Empresarial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito
+                  Imobiliário</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito de
+                  Família</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito
+                  Trabalhista</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito Criminal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="text-gray-400 hover:text-yellow-500 transition flex items-center"
+                  ><i class="bi bi-chevron-right mr-2"></i> Direito Bancário</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Newsletter</h3>
+            <p class="text-gray-400 mb-6">
+              Receba nossas atualizações e conteúdos jurídicos
+            </p>
+            <div class="space-y-4">
+              <input
+                type="email"
+                placeholder="Seu e-mail"
+                class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:border-yellow-500 focus:outline-none transition text-white placeholder-gray-500"
+              />
+              <button
+                class="btn-primary w-full px-6 py-3 rounded-lg font-semibold"
+              >
+                Inscrever-se <i class="bi bi-envelope ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 Silva & Associados. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-6">
+              <p class="text-gray-400 hover:text-yellow-500 transition text-sm">
+                Desenvolvido por
+                <a
+                  href="http://portfolio-fael.vercel.app"
+                  class="font-bold text-yellow-500 hover:underline"
+                  >Rafael S.</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================
+         CTA FLUTUANTE WHATSAPP - Máxima conversão
+         ============================================ -->
+    <div class="floating-cta">
+      <a
+        href="https://wa.me/5571999999999?text=Olá! Gostaria de agendar uma consulta gratuita."
+        target="_blank"
+        class="whatsapp-btn"
+      >
+        <div class="pulse-ring"></div>
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT - Funcionalidades interativas
+         ============================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
